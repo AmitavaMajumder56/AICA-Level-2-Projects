@@ -1,0 +1,2 @@
+# Optional: enables the LSTM deep-learning model (Python 3.9 - 3.12 recommended)
+tensorflow>=2.15
