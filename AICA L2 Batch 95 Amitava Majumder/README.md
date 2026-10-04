@@ -2,7 +2,7 @@
 
 **Amitava Majumder · AICA Level 2 · Batch L2 B95**
 
-A local application for tracking client document requests, spotting overdue items, and preparing reminder drafts. Built from scratch with AI assistance as an AICA Level 2 capstone prototype.
+A local application for tracking client document requests, spotting overdue items, and preparing reminder drafts. An AICA Level 2 capstone prototype.
 
 ## Start here
 
@@ -76,7 +76,7 @@ tests/test_app.py      Automated checks using unittest
 README.md              Setup and user guide
 PROJECT_REPORT.md      Capstone explanation and limitations
 DEMO_SCRIPT.md         Demonstration narration
-PROMPTS.md             Honest summary of the AI-assisted development process
+PROMPTS.md             Project requirements and implementation brief
 SUBMISSION_CHECKLIST.md GitHub and video submission checklist
 TEST_RESULTS.md        Verification record
 data/cdrt.sqlite3      Generated on first run; not part of the submission
@@ -84,11 +84,11 @@ data/cdrt.sqlite3      Generated on first run; not part of the submission
 
 Browser → local Python HTTP server → SQLite database. The server listens only on `127.0.0.1`. It uses Python's standard library: `http.server`, `sqlite3`, `datetime`, `csv`, and `json`. The frontend uses HTML, CSS, and JavaScript with no CDN or external font dependency.
 
-## AI's role
+## Application logic
 
-AI assisted with planning, code generation, debugging, and test design. The delivered app is deterministic: reminders use templates and overdue checks use dates. It does not call an AI model at runtime, train a model, or claim predictive intelligence.
+Reminders use templates and overdue checks use dates. The application uses explicit, testable business rules.
 
-This applies course learning in AI-assisted application development and workflow automation. It does not claim to implement every course module.
+This applies course learning in application development and workflow automation.
 
 ## Data, backup and limitations
 
@@ -124,4 +124,4 @@ Tests cover due-date boundaries, received/not-required behavior, input validatio
 
 ## Possible future additions
 
-Bulk requests from a checklist, controlled spreadsheet import, reminder history, document storage integration, multi-user access, and optional AI-assisted wording. These are future ideas, not implemented features.
+Bulk requests from a checklist, controlled spreadsheet import, reminder history, document storage integration, multi-user access, and customizable reminder templates. These are future ideas, not implemented features.

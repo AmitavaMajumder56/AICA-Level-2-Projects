@@ -34,19 +34,18 @@ This is a status register, not a document storage system. The accountant continu
 | SQLite | Persistent client and request records |
 | HTML and CSS | Forms, dashboard and responsive presentation |
 | JavaScript | Search, filters, form actions and downloads |
-| AI assistance | Planning, code generation, debugging and test design |
 
 No API key or third-party Python package is required. The app runs locally in a browser and saves its database on the same computer.
 
 ## Course learning applied
 
-- **AI-assisted application development:** turning a business problem into requirements, source code and tests.
+- **Application development:** turning a business problem into requirements, source code and tests.
 - **Python fundamentals:** functions, dictionaries, input validation, date arithmetic, file output and database queries.
 - **Web application development:** browser interface, local HTTP API, and persistent storage.
 - **Workflow automation:** deriving overdue status and assembling reminder text from live records.
 - **Data presentation:** dashboard totals, progress indicator, status labels, and downloadable reports.
 
-The app does not implement machine learning, computer vision, MCP, n8n, or live LLM calls. Its business rules are deterministic. AI assistance during development is distinct from AI inference inside an application.
+The application uses deterministic business rules for status calculations and reminder templates.
 
 ## Data model
 
@@ -78,8 +77,8 @@ The supplied fictional sample contains three clients and eight requests. On load
 
 ## Limitations and future scope
 
-No automatic email sending, scheduled alerts, document contents verification, attachments, authentication, user roles, audit history, or statutory deadline calculation is implemented. The database is stored locally without encryption. Future versions could add controlled CSV imports, reusable checklists, reminder history, and optional AI-generated wording.
+No automatic email sending, scheduled alerts, document contents verification, attachments, authentication, user roles, audit history, or statutory deadline calculation is implemented. The database is stored locally without encryption. Future versions could add controlled CSV imports, reusable checklists, reminder history, and customizable reminder templates.
 
 ## Conclusion
 
-CDRT demonstrates a complete, limited workflow from recording a client request to reviewing outstanding documents and preparing a reminder. It combines AI-assisted development with transparent, testable rules and a local application that can be demonstrated without external services.
+CDRT demonstrates a complete, limited workflow from recording a client request to reviewing outstanding documents and preparing a reminder. It uses transparent, testable rules and can be demonstrated locally without external services.

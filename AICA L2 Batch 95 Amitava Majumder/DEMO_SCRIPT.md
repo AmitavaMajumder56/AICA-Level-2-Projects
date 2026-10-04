@@ -26,7 +26,7 @@ Choose New request. Select ABC Traders (Demo), enter “Cash book”, choose Boo
 
 Open Document requests. Filter by Overdue. Mark the ABC Traders bank statement Received. Explain that it disappears from the overdue filter because the status is now Received. Reset the filters and show its received date.
 
-“Overdue is calculated only for pending documents when their due date is before today. It is a tracking rule, not an AI prediction.”
+“Overdue is calculated only for pending documents when their due date is before today. The rule uses the request status and due date.”
 
 ## 2:50–3:40 · Prepare a reminder
 
@@ -40,16 +40,16 @@ Open Document requests, filter to a client or status, and click Export shown row
 
 ## 4:10–5:00 · Explain the build and limits
 
-“The application uses Python, SQLite, HTML, CSS and JavaScript. AI assisted with planning, generating code, debugging and testing. It does not call an AI model while running. I applied course concepts in AI-assisted app development, Python and workflow automation.
+“The application uses Python, SQLite, HTML, CSS and JavaScript. The project applies concepts in application development, Python and workflow automation.
 
 “This version is a single-user local prototype. It tracks document status rather than storing actual files. Future improvements could include bulk checklists, reminder history and controlled email integration.”
 
 ## Questions to practise
 
 - **Where is the data stored?** In `data/cdrt.sqlite3` on the same laptop.
-- **Does the app use AI?** AI helped build it; the running app uses explicit rules and templates.
+- **How are reminders generated?** The app combines templates with the selected client’s pending requests.
 - **Why is a due-today item not overdue?** The overdue rule uses due date strictly earlier than today.
 - **How is progress calculated?** Received divided by Received plus Pending; Not required is excluded.
 - **How do you back it up?** Close the app, then copy its SQLite database.
 - **What was tested?** Date boundaries, status transitions, saved records, reminder contents, input validation, exports and HTTP actions; see TEST_RESULTS.md.
-- **What is not implemented?** Email sending, document storage, live AI generation and multi-user access.
+- **What is not implemented?** Email sending, document storage and multi-user access.

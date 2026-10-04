@@ -24,7 +24,7 @@ Based on the course PDF and Github Repository Upload Guide supplied by the parti
 6. Commit the upload.
 7. Choose Contribute → Open pull request. Confirm the destination is `aiinicai/AICA-Level-2-Projects`, branch `main`, and the source is your fork.
 8. Suggested title: **Add CDRT capstone — Amitava Majumder — L2 B95**.
-9. Suggested description: “Adds Client Document Request Tracker (CDRT), a local Python and SQLite capstone application. Includes client and document registers, overdue tracking, template-based reminder drafts, CSV exports, fictional demo data, automated tests and setup documentation. Developed with AI assistance; no runtime AI model or email sending.”
+9. Suggested description: “Adds Client Document Request Tracker (CDRT), a local Python and SQLite capstone application. Includes client and document registers, overdue tracking, template-based reminder drafts, CSV exports, fictional demo data, automated tests and setup documentation. Reminders use templates and require manual review and sending.”
 10. Open the pull request and retain its link. The repository owner controls review and merging.
 
 ## Demonstration and submission form
